@@ -26,7 +26,6 @@ autoinstall:
         - gnome-software-plugin-flatpak
         - gnome-tweaks
         - gnome-shell-extensions
-        - code
         - python3-venv 
         - python3-poetry
     codecs:
