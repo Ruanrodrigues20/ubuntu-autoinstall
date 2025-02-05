@@ -1,0 +1,38 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        realname: 'Ruan Rodrigues'
+        hostname: ubuntu-rr
+        username: ruan-rodrigues
+        password: '$y$j9T$dRPAjnFwHT09vflk9qYpL0$FrFjb1g/8OcDWHNpZxX43dl0eEV3XaTMJShunt2r5tA'
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Sao_Paulo"   
+    packages:
+        - libreoffice
+        - gimp
+        - git
+        - wget
+        - curl
+        - wget
+        - git
+        - dpkg
+        - tree
+        - neofetch
+        - vlc
+        - flatpak
+        - gnome-software-plugin-flatpak
+        - gnome-tweaks
+        - gnome-shell-extensions
+        - code
+        - python3-venv 
+        - python3-poetry
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
+    shutdown: reboot
+
